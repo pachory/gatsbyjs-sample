@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
+    description: 'はじめての GraphQL',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -18,7 +19,7 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     {
-      resolve: 'gatsby-plugin-styled-components'
-    }
+      resolve: 'gatsby-plugin-styled-components',
+    },
   ],
 }
