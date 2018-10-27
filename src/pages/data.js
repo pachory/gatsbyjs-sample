@@ -19,6 +19,8 @@ const Data = props => {
           </Link>
         )
       })}
+
+      <Link to="/">Go back to the homepage</Link>
     </Layout>
   )
 }
