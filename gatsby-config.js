@@ -18,6 +18,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    'gatsby-source-hacker-news',
     {
       resolve: 'gatsby-plugin-styled-components',
     },
