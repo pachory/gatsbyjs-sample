@@ -1,23 +1,25 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
+import Layout from '../components/layout'
 
 // GraphQL のレスポンスが引数の props に入ってくる
 const Data = props => {
   return (
-    <div>
+    <Layout>
       {props.data.allHnStory.edges.map(edge => {
         const story = edge.node
+        const path = '/posts/' + story.id
 
         return (
-          <a style={{ color: 'inherit' }} href={story.url} key={story.id}>
+          <Link to={path} style={{ color: 'inherit' }}>
             {story.title}
             <small style={{ display: 'block' }}>
               {story.score} Point | {story.domain}
             </small>
-          </a>
+          </Link>
         )
       })}
-    </div>
+    </Layout>
   )
 }
 
