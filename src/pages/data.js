@@ -9,9 +9,9 @@ const Data = props => {
         const story = edge.node
 
         return (
-          <a style={{color: 'inherit'}} href={story.url} key={story.id}>
+          <a style={{ color: 'inherit' }} href={story.url} key={story.id}>
             {story.title}
-            <small style={{display: 'block'}}>
+            <small style={{ display: 'block' }}>
               {story.score} Point | {story.domain}
             </small>
           </a>
